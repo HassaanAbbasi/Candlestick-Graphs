@@ -1,0 +1,107 @@
+<html>
+
+    <head>
+        <title>Scotiabank Stocks Chart</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <script type = "text/javascript" src = {{cdnJS | safe}}></script>
+        <style>
+            body,
+            h2{
+                font-family: 'Roboto Condensed', sans-serif;
+                color: white;
+            }
+
+            p {
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 5.2mm;
+            }
+            
+        </style>
+    </head>
+
+    <body style="background-color: #d7cec7;">
+
+        <div class="w3-content" style="max-width:1500px;">
+            {{script | safe}}
+            {{div | safe}}
+        </div>
+
+        <div class="w3-content" style="max-width:2000px">
+            <div class="w3-container w3-padding-32">
+                <div class="w3-card-2 w3-margin" style="background-color: #76323f;">
+                    <div class="w3-container">
+                        <h2><b>Welcome!</b></h2>
+                    </div>
+                    <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #565656;">
+                        <p>
+                            This is a live candlestick chart of Scotiabank's Toronto stock. By default, the chart focuses on data between the first day of the 
+                            current month and the last day of the current month. The chart is capable of showing data from as early as 1995.
+                        </p>
+
+                        <p>
+                            Candlesticks are useful,
+                            as they provide traders with important price points (opening, closing, high, low) in a clear and visual manner. With that price information,
+                            it becomes possible to determine potential price movements based on patterns indicated by the chart.
+                        </p>
+                    </div>
+
+                    <div class="w3-container" style="background-color: #76323f;">
+                        <h2><b>How to Read a Candlestick Chart</b></h2>
+                    </div>
+                    <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #565656;">
+                        <p>
+                            A daily candlestick represents the market's opening, closing, high, and low price for the day. 
+                        </p>
+
+                        <p style="display: inline;">
+                            The solid colored rectangles show the range between the opening and closing prices for each day. A <p style="color: #19c902; display: inline;">green</p>
+                            rectangle indicates that the closing price was larger than the opening price (an increase in stock price). On the other hand, a 
+                            <p style="color: #ff584d; display: inline;">red</p> rectangle indicates that the closing price was less than the opening price (a decrease in stock 
+                            price).
+                        </p>
+
+                        <p>
+                            The thin black lines running through the middle of the colored rectangles represent the highest and lowest prices for the stock on those days.
+                            The top of the line shows the highest price, while the bottom of the line shows the lowest price.
+                        </p>
+
+                        <p>
+                            For more information on how to interpret and analyze candlestick chart patterns, check out this <a href="https://www.investopedia.com/trading/candlestick-charting-what-is-it/#mntl-sc-block_1-0-22" target = "_blank">resource</a>.
+                        </p>
+                    </div>
+
+                    <div class="w3-container" style="background-color: #76323f;">
+                        <h2><b>How to Use Chart Tools</b></h2>
+                    </div>
+                    <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #565656;">
+                        <p>
+                            On the right side of the chart, there are five tools that you can use to interact with the graph. Here's what each of them do:
+                            <p>
+                                <img src="http://docs.bokeh.org/en/0.11.1/_images/Pan.png" alt="pan" style="padding-right: 4mm;">
+                                test test testtesttesttesttesttesttesttest test test test test testtesttesttesttesttesttesttest test test
+                                test test testtesttesttesttesttesttesttest test test test test testtesttesttesttesttesttesttest test test
+                                test test testtesttesttesttesttesttesttest test test
+                            </p>
+                            <p>
+                                <img src="http://docs.bokeh.org/en/0.11.1/_images/BoxZoom.png" alt="pan" style="padding-right: 4mm;"> test
+                            </p>
+                            <p>
+                                <img src="http://docs.bokeh.org/en/0.11.1/_images/BoxZoom.png" alt="pan" style="padding-right: 4mm;"> test
+                            </p>
+                            <p>
+                                <img src="http://docs.bokeh.org/en/0.11.1/_images/BoxZoom.png" alt="pan" style="padding-right: 4mm;"> test
+                            </p>
+                            <p>
+                                <img src="http://docs.bokeh.org/en/0.11.1/_images/BoxZoom.png" alt="pan" style="padding-right: 4mm;"> test
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
