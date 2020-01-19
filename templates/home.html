@@ -1,8 +1,9 @@
-<html>
+<html style="scroll-behavior: smooth;">
 
     <head>
         <title>Scotiabank Stocks Chart</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
         <script type = "text/javascript" src = {{cdnJS | safe}}></script>
@@ -23,13 +24,27 @@
 
     <body style="background-color: #d7cec7;">
 
-        <div class="w3-content" style="max-width:1500px;">
+        <div class="w3-top">
+            <div class="w3-bar w3-black">
+                <a href="#"
+                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-red">Chart</a>
+                <a href="#welc"
+                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-red">Welcome</a>
+                <a href="#read"
+                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-red">Reading the Chart</a>
+                <a href="#tools"
+                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-red">Chart Tools</a>
+            </div>
+
+        </div>
+
+        <div class="w3-content" style="max-width:1500px; margin-top: 45px;">
             {{script | safe}}
             {{div | safe}}
         </div>
 
-        <div class="w3-content" style="max-width:2000px">
-            <div class="w3-container w3-padding-32">
+        <div class="w3-content" style="max-width:2000px; margin-top: 45px;">
+            <div class="w3-container w3-padding-32" id="welc">
                 <div class="w3-card-2 w3-margin" style="background-color: #76323f;">
                     <div class="w3-container">
                         <h2><b>Welcome!</b></h2>
@@ -46,10 +61,18 @@
                             it becomes possible to determine potential price movements based on patterns indicated by the chart.
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="w3-container" style="background-color: #76323f;">
+
+        <div class="w3-content" style="max-width:2000px; margin-top: 45px;">
+            <div class="w3-container w3-padding-32" id="read">
+                <div class="w3-card-2 w3-margin" style="background-color: #76323f;">
+                    <div class="w3-container">
                         <h2><b>How to Read a Candlestick Chart</b></h2>
                     </div>
+                    
                     <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #565656;">
                         <p>
                             A daily candlestick represents the market's opening, closing, high, and low price for the day. 
@@ -68,40 +91,97 @@
                         </p>
 
                         <p>
-                            For more information on how to interpret and analyze candlestick chart patterns, check out this <a href="https://www.investopedia.com/trading/candlestick-charting-what-is-it/#mntl-sc-block_1-0-22" target = "_blank">resource</a>.
-                        </p>
-                    </div>
-
-                    <div class="w3-container" style="background-color: #76323f;">
-                        <h2><b>How to Use Chart Tools</b></h2>
-                    </div>
-                    <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #565656;">
-                        <p>
-                            On the right side of the chart, there are five tools that you can use to interact with the graph. Here's what each of them do:
-                            <p>
-                                <img src="http://docs.bokeh.org/en/0.11.1/_images/Pan.png" alt="pan" style="padding-right: 4mm;">
-                                test test testtesttesttesttesttesttesttest test test test test testtesttesttesttesttesttesttest test test
-                                test test testtesttesttesttesttesttesttest test test test test testtesttesttesttesttesttesttest test test
-                                test test testtesttesttesttesttesttesttest test test
-                            </p>
-                            <p>
-                                <img src="http://docs.bokeh.org/en/0.11.1/_images/BoxZoom.png" alt="pan" style="padding-right: 4mm;"> test
-                            </p>
-                            <p>
-                                <img src="http://docs.bokeh.org/en/0.11.1/_images/BoxZoom.png" alt="pan" style="padding-right: 4mm;"> test
-                            </p>
-                            <p>
-                                <img src="http://docs.bokeh.org/en/0.11.1/_images/BoxZoom.png" alt="pan" style="padding-right: 4mm;"> test
-                            </p>
-                            <p>
-                                <img src="http://docs.bokeh.org/en/0.11.1/_images/BoxZoom.png" alt="pan" style="padding-right: 4mm;"> test
-                            </p>
+                            For information on how to interpret and analyze candlestick chart patterns, check out this <a href="https://www.investopedia.com/trading/candlestick-charting-what-is-it/#mntl-sc-block_1-0-22" target = "_blank">resource</a>.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="w3-content" style="max-width:2000px; margin-top: 45px;">
+            <div class="w3-container w3-padding-32" id="tools">
+                <div class="w3-card-2 w3-margin" style="background-color: #76323f;">
+                <div class="w3-container">
+                    <h2><b>How to Use Chart Tools</b></h2>
+                </div>
+                <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #565656;">
+                    <p>
+                        On the bottom right side of the chart, there are five tools that you can use to interact with the graph. 
+                        To select/unselect a tool, click on it. 
+                        Note that the "Pan Tool" and "BoxZoom Tool" cannot be selected at the same time.
+                        Here's what each of the tools do:
+                    </p>
+
+                    <h3 class="w3-padding-small" style="background-color:deepskyblue; display: inline-block;">Pan Tool</h3>
+                    <div class="w3-container">
+                        <div>
+                            <img src="http://docs.bokeh.org/en/0.11.1/_images/Pan.png" alt="pan" style="padding-right: 4mm; padding-right: 0mm; background-color: white;">
+                        </div>
+                        <div>
+                            <p>
+                                Allows you to navigate the chart by left-click dragging a mouse
+                                or dragging a finger across the plot region. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 class="w3-padding-small" style="background-color:deepskyblue; display: inline-block;">BoxZoom Tool</h3>
+                    <div class="w3-container">
+                        <div>
+                            <img src="http://docs.bokeh.org/en/0.11.1/_images/BoxZoom.png" alt="boxzoom" style="padding-right: 4mm; padding-right: 0mm; background-color: white;">
+                        </div>
+                        <div>
+                            <p>
+                                Lets you zoom in on a defined rectangular region. This rectangular region
+                                is created by left-click dragging a mouse
+                                or dragging a finger across the plot region. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 class="w3-padding-small" style="background-color:deepskyblue; display: inline-block;">WheelZoom Tool</h3>
+                    <div class="w3-container">
+                        <div>
+                            <img src="http://docs.bokeh.org/en/0.11.1/_images/WheelZoom.png" alt="wheelzoom" style="padding-right: 4mm; padding-right: 0mm; background-color: white;">
+                        </div>
+                        <div>
+                            <p>
+                                This tool allows you to zoom in and out of the plot.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 class="w3-padding-small" style="background-color:deepskyblue; display: inline-block;">Save Tool</h3>
+                    <div class="w3-container">
+                        <div>
+                            <img src="http://docs.bokeh.org/en/0.11.1/_images/Save.png" alt="save" style="padding-right: 4mm; padding-right: 0mm; background-color: white;">
+                        </div>
+                        <div>
+                            <p>
+                                Saves a PNG image of the current chart.
+                            </p>
+                        </div>
+                    </div>
+                       
+                    <h3 class="w3-padding-small" style="background-color:deepskyblue; display: inline-block;">Reset Tool</h3>
+                    <div class="w3-container">
+                        <div>
+                            <img src="http://docs.bokeh.org/en/0.11.1/_images/Reset.png" alt="reset" style="padding-right: 4mm; padding-right: 0mm; background-color: white;">
+                        </div>
+                        <div>
+                            <p>
+                                Restores the plot to its default x-range and y-range values. 
+                                The default values for the x-range are the first and last dates of the month, 
+                                while the default values for the y-range are the lowest and highest prices 
+                                for the stock that month. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
     </body>
 
-</html>
+</html s>

@@ -39,7 +39,7 @@ def home():
 
     #Initializing Bokeh chart
     plot = figure(x_axis_type = "datetime", width = 1800, height = 600, x_axis_label = "Date",
-    y_axis_label = "Stock Value", sizing_mode = "scale_width")
+    y_axis_label = "Stock Value", sizing_mode = "scale_width", toolbar_location = "below")
     plot.grid.grid_line_alpha = 0.3
     plot.title.text_font_size = '15pt'
     plot.xaxis.axis_label_text_font_size = "12pt"
