@@ -23,18 +23,18 @@
         </style>
     </head>
 
-    <body style="background-color: #d7cec7;">
+    <body style="background-color: #eae7dc;">
 
         <div class="w3-top">
             <div class="w3-bar w3-black">
                 <a href="#"
-                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-red">Chart</a>
+                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-black">Chart</a>
                 <a href="#welc"
-                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-red">Welcome</a>
+                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-black">Welcome</a>
                 <a href="#read"
-                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-red">Reading the Chart</a>
+                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-black">Reading the Chart</a>
                 <a href="#tools"
-                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-red">Chart Tools</a>
+                class="w3-bar-item w3-button w3-padding-large button1 w3-hover-white w3-hover-text-black">Chart Tools</a>
             </div>
 
         </div>
@@ -46,11 +46,11 @@
 
         <div class="w3-content" style="max-width:2000px; margin-top: 45px;">
             <div class="w3-container w3-padding-32" id="welc">
-                <div class="w3-card-2 w3-margin" style="background-color: #76323f;">
+                <div class="w3-card-2 w3-margin" style="background-color: #8b0000;">
                     <div class="w3-container">
                         <h2><b>Welcome!</b></h2>
                     </div>
-                    <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #565656;">
+                    <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #8e8d8a;">
                         <p>
                             This is a live candlestick chart of Scotiabank's Toronto stock. By default, the chart focuses on data between the first day of the 
                             current month and the last day of the current month. The chart is capable of showing data from as early as 1995.
@@ -69,20 +69,20 @@
 
         <div class="w3-content" style="max-width:2000px; margin-top: 45px;">
             <div class="w3-container w3-padding-32" id="read">
-                <div class="w3-card-2 w3-margin" style="background-color: #76323f;">
+                <div class="w3-card-2 w3-margin" style="background-color: #8b0000;">
                     <div class="w3-container">
                         <h2><b>How to Read a Candlestick Chart</b></h2>
                     </div>
                     
-                    <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #565656;">
+                    <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #8e8d8a;">
                         <p>
                             A daily candlestick represents the market's opening, closing, high, and low price for the day. 
                         </p>
 
                         <p style="display: inline;">
-                            The solid colored rectangles show the range between the opening and closing prices for each day. A <p style="color: #19c902; display: inline;">green</p>
+                            The solid colored rectangles show the range between the opening and closing prices for each day. A <p style="background-color: #19c902; padding:0.5mm; display: inline;">green</p>
                             rectangle indicates that the closing price was larger than the opening price (an increase in stock price). On the other hand, a 
-                            <p style="color: #ff584d; display: inline;">red</p> rectangle indicates that the closing price was less than the opening price (a decrease in stock 
+                            <p style="background-color: #ff584d; display: inline; padding:0.5mm;">red</p> rectangle indicates that the closing price was less than the opening price (a decrease in stock 
                             price).
                         </p>
 
@@ -101,11 +101,11 @@
 
         <div class="w3-content" style="max-width:2000px; margin-top: 45px;">
             <div class="w3-container w3-padding-32" id="tools">
-                <div class="w3-card-2 w3-margin" style="background-color: #76323f;">
+                <div class="w3-card-2 w3-margin" style="background-color: #8b0000;">
                 <div class="w3-container">
                     <h2><b>How to Use Chart Tools</b></h2>
                 </div>
-                <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #565656;">
+                <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #8e8d8a;">
                     <p>
                         On the bottom right side of the chart, there are five tools that you can use to interact with the graph. 
                         To select/unselect a tool, click on it. 
@@ -113,11 +113,8 @@
                         Here's what each of the tools do:
                     </p>
 
-                    <h3 class="w3-padding-small" style="background-color:deepskyblue; display: inline-block;">Pan Tool</h3>
+                    <h3 class="w3-padding-small" style="background-color:#d8c3a5; display: inline-block;">Pan Tool: <img src="http://docs.bokeh.org/en/0.11.1/_images/Pan.png" alt="pan" style="padding: 3mm;"></h3>
                     <div class="w3-container">
-                        <div>
-                            <img src="http://docs.bokeh.org/en/0.11.1/_images/Pan.png" alt="pan" style="padding-right: 4mm; padding-right: 0mm; background-color: white;">
-                        </div>
                         <div>
                             <p>
                                 Allows you to navigate the chart by left-click dragging a mouse
@@ -126,11 +123,8 @@
                         </div>
                     </div>
 
-                    <h3 class="w3-padding-small" style="background-color:deepskyblue; display: inline-block;">BoxZoom Tool</h3>
+                    <h3 class="w3-padding-small" style="background-color:#d8c3a5; display: inline-block;">BoxZoom Tool: <img src="http://docs.bokeh.org/en/0.11.1/_images/BoxZoom.png" alt="boxzoom" style="padding: 3mm;"></h3>
                     <div class="w3-container">
-                        <div>
-                            <img src="http://docs.bokeh.org/en/0.11.1/_images/BoxZoom.png" alt="boxzoom" style="padding-right: 4mm; padding-right: 0mm; background-color: white;">
-                        </div>
                         <div>
                             <p>
                                 Lets you zoom in on a defined rectangular region. This rectangular region
@@ -140,11 +134,8 @@
                         </div>
                     </div>
 
-                    <h3 class="w3-padding-small" style="background-color:deepskyblue; display: inline-block;">WheelZoom Tool</h3>
+                    <h3 class="w3-padding-small" style="background-color:#d8c3a5; display: inline-block;">WheelZoom Tool: <img src="http://docs.bokeh.org/en/0.11.1/_images/WheelZoom.png" alt="wheelzoom" style="padding: 3mm;"></h3>
                     <div class="w3-container">
-                        <div>
-                            <img src="http://docs.bokeh.org/en/0.11.1/_images/WheelZoom.png" alt="wheelzoom" style="padding-right: 4mm; padding-right: 0mm; background-color: white;">
-                        </div>
                         <div>
                             <p>
                                 This tool allows you to zoom in and out of the plot.
@@ -152,11 +143,8 @@
                         </div>
                     </div>
 
-                    <h3 class="w3-padding-small" style="background-color:deepskyblue; display: inline-block;">Save Tool</h3>
+                    <h3 class="w3-padding-small" style="background-color:#d8c3a5; display: inline-block;">Save Tool: <img src="http://docs.bokeh.org/en/0.11.1/_images/Save.png" alt="save" style="padding:3mm"></h3>
                     <div class="w3-container">
-                        <div>
-                            <img src="http://docs.bokeh.org/en/0.11.1/_images/Save.png" alt="save" style="padding-right: 4mm; padding-right: 0mm; background-color: white;">
-                        </div>
                         <div>
                             <p>
                                 Saves a PNG image of the current chart.
@@ -164,11 +152,8 @@
                         </div>
                     </div>
                        
-                    <h3 class="w3-padding-small" style="background-color:deepskyblue; display: inline-block;">Reset Tool</h3>
+                    <h3 class="w3-padding-small" style="background-color:#d8c3a5; display: inline-block;">Reset Tool: <img src="http://docs.bokeh.org/en/0.11.1/_images/Reset.png" alt="reset" style="padding:3mm"></h3>
                     <div class="w3-container">
-                        <div>
-                            <img src="http://docs.bokeh.org/en/0.11.1/_images/Reset.png" alt="reset" style="padding-right: 4mm; padding-right: 0mm; background-color: white;">
-                        </div>
                         <div>
                             <p>
                                 Restores the plot to its default x-range and y-range values. 
