@@ -1,8 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 def home():
     from pandas_datareader import data
     import datetime
@@ -16,8 +16,18 @@ def home():
     start = datetime.datetime(1970, 1, 1)
     present = datetime.date.today()
 
-    #Acquiring stock data from Yahoo Finance for Scotiabank
-    dataF = data.DataReader("BNS.TO", "yahoo", start, present)
+    #Acquiring stock data from Yahoo Finance for given stock symbol. If fail, return error message
+    stock = ""
+    if request.method == "POST":
+        stock = request.form["stockIn"]
+
+    if request.method == "GET":
+        return render_template("home.html")
+
+    try:
+        dataF = data.DataReader(stock.upper(), "yahoo", start, present)
+    except Exception as e:
+        return render_template("home.html", text = f"Information for '{stock}' does not exist. Please check if you typed your stock symbol correctly.")
 
     #Adding column indicating increase or decrease
     def incOrDec(closing, opening):
@@ -44,7 +54,7 @@ def home():
     plot.title.text_font_size = '15pt'
     plot.xaxis.axis_label_text_font_size = "12pt"
     plot.yaxis.axis_label_text_font_size = "12pt"
-    plot.title.text = "Scotiabank Stocks Candlestick Chart"
+    plot.title.text = f"Candlestick Chart for: {stock.upper()}"
 
     #Finding the last day of any month
     date = datetime.datetime(dataF.index[-1].year, dataF.index[-1].month, 1)

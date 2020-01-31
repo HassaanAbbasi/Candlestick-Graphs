@@ -87,6 +87,14 @@
                 -webkit-transform: scaleY(1.0);
             }
             }
+
+            input{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            }
+
         </style>
     </head>
 
@@ -121,6 +129,16 @@
             {{div | safe}}
         </div>
 
+        <div class="w3-content" style="padding-top: 20px;">
+            <div class="w3-content w3-padding-large" style="max-width:350px; color: rgb(240, 50, 50); text-align: center; display: block; font-style: italic;">
+                {{text | safe}}
+            </div>
+            <form action="{{url_for('home')}}" method="POST" style="text-align: center;">
+                <input title="Examples: 'BNS.TO', 'GOOG', etc." placeholder="Please enter a valid stock symbol..." size="35" name="stockIn" required>
+                <button type="submit" style="margin-left: 5px;" class="w3-button w3-black">Submit</button>
+            </form>
+        </div>
+
         <div class="w3-content" style="max-width:1100px; margin-top: 45px;">
             <div class="w3-container w3-padding-32" id="welc">
                 <div class="w3-card-2 w3-margin" style="background-color: #8b0000;">
@@ -129,14 +147,16 @@
                     </div>
                     <div class="w3-row w3-padding-large" style="font-size: 5.2mm; background-color: #8e8d8a;">
                         <p>
-                            This is a live candlestick chart of Scotiabank's Toronto stock. By default, the chart focuses on data between the first day of the 
-                            current month and the last day of the current month. The chart is capable of showing data from as early as 1995.
+                            This is a live candlestick chart that shows the stock data for any company on the stock market. 
+                            By default, the graph focuses on data between the 
+                            first day of the current month and the last day of the current month. The chart is capable of showing 
+                            data from the first day the company entered the stock market.
                         </p>
 
                         <p>
-                            Candlesticks are useful,
+                            Candlestick charts are useful,
                             as they provide traders with important price points (opening, closing, high, low) in a clear and visual manner. With that price information,
-                            it becomes possible to determine potential price movements based on patterns indicated by the chart.
+                            it becomes possible to determine potential price movements based on patterns indicated by the chart. To start, simply input your stock symbol above.
                         </p>
                     </div>
                 </div>
