@@ -12,4 +12,4 @@ The chart can be viewed at https://candlestick-stocks.herokuapp.com/.
 ## Acknowledgments
 I developed this project to explore the relationship between technology and finance.
 
-Originally, this project only plotted Scotiabank Toronto's data because during my stock market research I found that it is an excellent long-term core holding. However, I realized that it's more beneficial to be able to view the stock data of ANY company instead of just one.
+Originally, this web app only plotted Scotiabank Toronto's data because during my stock market research I found that it is an excellent long-term core holding. However, I realized that it's more beneficial to be able to view the stock data of ANY company instead of just one.
