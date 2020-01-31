@@ -1,7 +1,7 @@
-# Scotiabank-Stocks-Graph
-This repo is used to host my Scotiabank stocks graph. Using Python, Pandas, and Bokeh, I process data from Yahoo Finance and present it on a candlestick chart. The graph I created shows daily stock data from January 1995 to the present.
+# Candlestick-Graphs
+This repo is used to host my live candlestick stocks graph. Using Python, Pandas, and Bokeh, I process data from Yahoo Finance and present it on a candlestick chart. The graphs created show daily stock data from the day the company debuted on the stock market to the present.
 
-The chart can be viewed at https://scotiabank-stock.herokuapp.com/.
+The chart can be viewed at https://candlestick-stocks.herokuapp.com/.
 
 ## Built With
 * [Pandas](https://pandas.pydata.org/) - Python data analysis library
@@ -12,4 +12,4 @@ The chart can be viewed at https://scotiabank-stock.herokuapp.com/.
 ## Acknowledgments
 I developed this project to explore the relationship between technology and finance.
 
-I chose to specifically plot Scotiabank Toronto's data because during my stock market research I found that it is an excellent long-term core holding. Also, Scotiabank is Canada's most international bank, which makes it all the more interesting to follow and study.
+Originally, this project only plotted Scotiabank Toronto's data because during my stock market research I found that it is an excellent long-term core holding. However, I realized that it's more beneficial to be able to view the stock data of ANY company instead of just one.
