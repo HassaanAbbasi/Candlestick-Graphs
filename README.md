@@ -3,6 +3,19 @@ This repo is used to host my live candlestick stocks graph. Using Python, Pandas
 
 The chart can be viewed at https://candlestick-stocks.herokuapp.com/.
 
+## Demo
+Getting the candlestick chart for a company's stock:
+
+![Data show](demo/stock1.gif)
+
+Interacting with the graph:
+
+![Interact](demo/stock2.gif)
+
+Lets the user know when an unknown stock symbol is entered:
+
+![Unknown stock](demo/stock3.gif)
+
 ## Built With
 * [Pandas](https://pandas.pydata.org/) - Python data analysis library
 * [Bokeh](https://docs.bokeh.org/en/latest/index.html) - Data visualization library
