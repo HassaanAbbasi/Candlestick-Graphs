@@ -1,8 +1,6 @@
 # Candlestick-Graphs
 This repo is used to host my live candlestick stocks graph. Using Python, Pandas, and Bokeh, I process data from Yahoo Finance and present it on a candlestick chart. The graphs created show daily stock data from the day the company debuted on the stock market to the present.
 
-The chart can be viewed at https://candlestick-stocks.herokuapp.com/.
-
 ## Demo
 Getting the candlestick chart for a company's stock:
 
